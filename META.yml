@@ -1,0 +1,10 @@
+--- #YAML:1.0
+name: File-Samba
+version: 0.01
+author:
+  - |-
+    Salvatore E. ScottoDiLuzio <lt>washu@olypmus.net<gt>
+abstract: Module to manipulate a smb.conf file
+license: perl
+provides: {}
+generated_by: Module::Build version 0.24
