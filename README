@@ -1,8 +1,12 @@
-File-Samba version 0.01
+File-Samba version 0.02
 =======================
 
 Version 0.01 -- 5/11/2004
 	-- Initial version of File::Samba
+
+Version 0.02 -- 9/15/2004
+	-- Fixed Data:Dump requirement in Build.PL
+
 
 This module allows for easy editing of smb.conf in an OO way.
 The need arised from openfiler http://www.openfiler.org which at this current

@@ -12,7 +12,7 @@ our @ISA = qw(Exporter);
 #
 # We all for several exports
 #
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our (@EXPORT, @EXPORT_OK, %EXPORT_TAGS);
 #
 # Exported Functions by request
