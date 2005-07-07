@@ -12,7 +12,7 @@ our @ISA = qw(Exporter);
 #
 # We all for several exports
 #
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 our (@EXPORT, @EXPORT_OK, %EXPORT_TAGS);
 #
 # Exported Functions by request
@@ -51,18 +51,18 @@ sub new
     $self->{_version} = 2;
     eval 
     { 
-	while(<DATA>)
-	{
-	    chomp;
-            next if /^#/;
-	    my ($st,$vers,$cmd) = split(/:/);
-            if($cmd && $vers && $st)
-            {
-                chomp($cmd);
-                $self->{_VALID}->{$st}->{"v$vers"}->{$cmd} = "1";
-            }
-            last if /__END__/;
-	}
+			while(<DATA>)
+			{
+	    	chomp;
+      	next if /^#/;
+	    	my ($st,$vers,$cmd) = split(/:/);
+      	if($cmd && $vers && $st)
+      	{
+          chomp($cmd);
+          $self->{_VALID}->{$st}->{"v$vers"}->{$cmd} = "1";
+      	}
+      	last if /__END__/;
+			}
     };    
 
     bless ($self, $class);
